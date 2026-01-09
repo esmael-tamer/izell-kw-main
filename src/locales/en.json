@@ -1,0 +1,186 @@
+{
+    "nav": {
+        "shop": "Shop",
+        "new": "New",
+        "bridal": "Bridal",
+        "admin": "Admin",
+        "cart": "Cart",
+        "home": "Home"
+    },
+    "home": {
+        "announcement": "Orders are made to order and typically ship within 10 days to 20 days business days without Friday and Saturday",
+        "shopNow": "Shop Now",
+        "bestSelling": "Best Selling",
+        "viewAll": "View All",
+        "collections": "Collections",
+        "newCollection": "New Collection",
+        "bridalCollection": "Bridal Collection",
+        "exploreCollection": "Explore Collection"
+    },
+    "shop": {
+        "title": "Shop Now",
+        "subtitle": "Discover our complete collection of luxury dresses",
+        "filters": {
+            "all": "All",
+            "dresses": "Dresses",
+            "bridal": "Bridal",
+            "new": "New"
+        }
+    },
+    "product": {
+        "addToCart": "Add to Cart",
+        "size": "Size",
+        "color": "Color",
+        "description": "Description",
+        "details": "Details",
+        "relatedProducts": "Related Products",
+        "inStock": "In Stock",
+        "outOfStock": "Out of Stock",
+        "deliveryTime": "Delivery Time: 10 to 20 business days",
+        "sizeGuide": "Size Guide",
+        "youMayAlsoLike": "You May Also Like",
+        "selectedColor": "Selected Color",
+        "notFound": "Product Not Found"
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "empty": "Your cart is empty",
+        "emptyDesc": "You haven't added any products yet",
+        "continueShopping": "Continue Shopping",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "shippingFree": "Free",
+        "total": "Total",
+        "checkout": "Proceed to Checkout",
+        "remove": "Remove",
+        "quantity": "Quantity",
+        "orderSummary": "Order Summary",
+        "form": {
+            "title": "Delivery Details",
+            "name": "Full Name",
+            "namePlaceholder": "Enter your full name",
+            "phone": "Phone Number",
+            "phonePlaceholder": "99999999",
+            "address": "Delivery Address",
+            "addressPlaceholder": "Area, Street, House number",
+            "confirm": "Confirm Order",
+            "back": "Back to Cart",
+            "required": "Please fill in all fields",
+            "success": "Order received successfully!",
+            "successDesc": "We will contact you shortly to confirm your order."
+        }
+    },
+    "admin": {
+        "title": "Admin Dashboard",
+        "products": "Products",
+        "orders": "Orders",
+        "customers": "Customers",
+        "settings": "Settings",
+        "addProduct": "Add Product",
+        "editProduct": "Edit Product",
+        "deleteProduct": "Delete Product",
+        "save": "Save",
+        "cancel": "Cancel",
+        "analytics": {
+            "salesOverview": "Sales Overview",
+            "salesAnalytics": "Sales Analytics",
+            "lastMonths": "Last 7 months",
+            "viewDetails": "View Details",
+            "export": "Export",
+            "exportData": "Export Data",
+            "downloading": "Downloading report...",
+            "period": "Period",
+            "chartTypes": {
+                "area": "Area",
+                "line": "Line",
+                "bar": "Bar"
+            },
+            "salesGrowth": "Sales & Orders Growth",
+            "topProducts": "Top Products",
+            "recentActivity": "Recent Activity",
+            "performance": "Performance",
+            "conversionRate": "Conversion Rate",
+            "avgOrderValue": "Avg Order Value",
+            "customerSatisfaction": "Customer Satisfaction",
+            "newOrder": "New Order"
+        }
+    },
+    "footer": {
+        "about": "About izel",
+        "aboutText": "Luxury women's fashion inspired by ancient Kuwaiti heritage with an elegant modern touch.",
+        "quickLinks": "Quick Links",
+        "contact": "Contact Us",
+        "followUs": "Follow Us",
+        "kuwait": "Kuwait",
+        "allRightsReserved": "All rights reserved. 2024 izel",
+        "trackOrder": "Track Order",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfService": "Terms of Service"
+    },
+    "features": {
+        "freeShipping": "Free Shipping",
+        "freeShippingDesc": "On orders over 500 SAR",
+        "quality": "High Quality",
+        "qualityDesc": "Premium and distinctive products",
+        "support": "Customer Support",
+        "supportDesc": "We're here to help you"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "success": "Success",
+        "confirm": "Confirm",
+        "close": "Close",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "currency": "KWD"
+    },
+    "search": {
+        "placeholder": "Search for products...",
+        "results": "Search Results",
+        "noResults": "No results found",
+        "viewAll": "View all results",
+        "popular": "Popular Searches"
+    },
+    "filters": {
+        "title": "Filters",
+        "active": "active",
+        "clearAll": "Clear All",
+        "category": "Category",
+        "priceRange": "Price Range",
+        "min": "Min",
+        "max": "Max",
+        "status": "Status",
+        "newArrivals": "New Arrivals",
+        "onSale": "On Sale",
+        "inStock": "In Stock Only"
+    },
+    "sort": {
+        "title": "Sort By",
+        "featured": "Featured",
+        "newest": "Newest First",
+        "priceAsc": "Price: Low to High",
+        "priceDesc": "Price: High to Low",
+        "nameAsc": "Name: A to Z",
+        "nameDesc": "Name: Z to A"
+    },
+    "about": {
+        "title": "About Us",
+        "ourStory": "Our Story",
+        "storyText1": "izel is a Kuwaiti brand specialized in designing and offering luxurious women's dara'as. Our journey began with a deep passion for traditional fashion and a desire to present unique pieces that combine authenticity with modernity.",
+        "storyText2": "We believe that every woman deserves to feel beautiful and confident, which is why we are committed to offering elegant designs suitable for all occasions, from everyday looks to special events.",
+        "ourMission": "Our Mission",
+        "missionText": "We strive to be the first destination for Kuwaiti and Gulf women seeking elegance and distinction. We are committed to providing high-quality products at reasonable prices, with exceptional customer service that ensures your complete satisfaction.",
+        "ourValues": "Our Values",
+        "value1Title": "Quality",
+        "value1Text": "We select the finest fabrics and materials to ensure your comfort and elegance",
+        "value2Title": "Design",
+        "value2Text": "Modern designs inspired by authentic heritage",
+        "value3Title": "Excellence",
+        "value3Text": "Each piece is unique and crafted with utmost care",
+        "contactTitle": "We're Here to Serve You",
+        "contactText": "Have a question or need assistance? Our team is ready to answer all your inquiries",
+        "contactButton": "Contact Us"
+    }
+}
