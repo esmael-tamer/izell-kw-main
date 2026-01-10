@@ -36,7 +36,7 @@ export const createOrderSchema = z.object({
 
 export const trackOrderQuerySchema = z.object({
   orderNumber: z.string()
-    .regex(/^IZ-\d{8}-\d{4}$/, 'Invalid order number format. Expected: IZ-YYYYMMDD-XXXX'),
+    .regex(/^IZ-\d{8}-[A-F0-9]{8}$/, 'Invalid order number format. Expected: IZ-YYYYMMDD-XXXXXXXX'),
   token: z.string().uuid('Invalid tracking token format'),
 });
 
@@ -46,7 +46,7 @@ export const updateOrderStatusSchema = z.object({
 
 export const orderNumberParamSchema = z.object({
   orderNumber: z.string()
-    .regex(/^IZ-\d{8}-\d{4}$/, 'Invalid order number format'),
+    .regex(/^IZ-\d{8}-[A-F0-9]{8}$/, 'Invalid order number format'),
 });
 
 // =====================================================

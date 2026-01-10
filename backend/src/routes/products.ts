@@ -10,6 +10,15 @@ import {
 const router = Router();
 
 // =====================================================
+// Helper: Sanitize search input
+// Escape special characters that could interfere with ILIKE queries
+// =====================================================
+function sanitizeSearchInput(input: string): string {
+  // Escape SQL LIKE wildcards (%, _) and backslashes
+  return input.replace(/[%_\\]/g, '\\$&');
+}
+
+// =====================================================
 // GET /products
 // List products with search, pagination, and sorting
 // =====================================================
@@ -18,7 +27,7 @@ router.get(
   validate(getProductsQuerySchema, 'query'),
   asyncHandler(async (req: Request, res: Response) => {
     const { search, page, limit, sort, order, category } = req.query as unknown as GetProductsQuery;
-    
+
     const pageNum = Number(page) || 1;
     const limitNum = Number(limit) || 20;
     const offset = (pageNum - 1) * limitNum;
@@ -27,9 +36,10 @@ router.get(
       .from('products')
       .select('*', { count: 'exact' });
 
-    // Search filter (name, name_ar, description)
+    // Search filter (name, name_ar, description) with sanitization
     if (search) {
-      query = query.or(`name.ilike.%${search}%,name_ar.ilike.%${search}%,description.ilike.%${search}%`);
+      const sanitizedSearch = sanitizeSearchInput(search);
+      query = query.or(`name.ilike.%${sanitizedSearch}%,name_ar.ilike.%${sanitizedSearch}%,description.ilike.%${sanitizedSearch}%`);
     }
 
     // Category filter

@@ -18,15 +18,16 @@ const router = Router();
 
 // =====================================================
 // Helper: Generate Order Number
-// Format: IZ-YYYYMMDD-XXXX (random 4 digits)
+// Format: IZ-YYYYMMDD-XXXXXXXX (8 hex characters from UUID)
+// More secure than 4-digit random (16^8 vs 10^4 possibilities)
 // =====================================================
 function generateOrderNumber(): string {
   const now = new Date();
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
-  const random = String(Math.floor(1000 + Math.random() * 9000)); // 4-digit random
-  
+  const random = uuidv4().split('-')[0].toUpperCase(); // 8 hex chars
+
   return `IZ-${year}${month}${day}-${random}`;
 }
 
